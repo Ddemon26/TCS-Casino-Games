@@ -1,20 +1,19 @@
 {
-  "name": "com.ddemon26.unityutils",
-  "displayName": "Unity Input Manager",
-  "description": "A input manager for Unity that allows you to easily create and manage input actions.",
-  "version": "1.0.0",
+  "name": "com.tcs.casinogames",
+  "displayName": "TCS-Casino-Games",
+  "description": "A collection of casino games for Unity",
+  "version": "1.0.1",
   "keywords": [
-    "input",
-    "attribute",
-    "inspector",
-    "manager",
-    "editor"
+    "casino",
+    "games",
+    "unity",
+    "collection"
   ],
-  "category": "input system",
+  "category": "Tent City Studio",
   "dependencies": {},
   "author": {
     "name": "Damon Fedorick",
-    "url": "https://github.com/Ddemon26/Input-Manager"
+    "url": "https://github.com/Ddemon26/TCS-Casino-Games"
   },
-  "documentationUrl": "https://github.com/Ddemon26/Input-Manager/blob/main/README.md"
+  "documentationUrl": "https://github.com/Ddemon26/CS-Casino-Games/blob/main/README.md"
 }
