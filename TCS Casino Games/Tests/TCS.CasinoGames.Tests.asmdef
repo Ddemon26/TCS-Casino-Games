@@ -1,0 +1,16 @@
+{
+    "name": "TCS.CasinoGames.Tests",
+    "rootNamespace": "TCS.CasinoGames.Tests",
+    "references": [
+        "GUID:977c30c2b37852543842fb5ee989fe4f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

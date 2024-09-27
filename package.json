@@ -1,0 +1,20 @@
+{
+  "name": "com.ddemon26.unityutils",
+  "displayName": "Unity Input Manager",
+  "description": "A input manager for Unity that allows you to easily create and manage input actions.",
+  "version": "1.0.0",
+  "keywords": [
+    "input",
+    "attribute",
+    "inspector",
+    "manager",
+    "editor"
+  ],
+  "category": "input system",
+  "dependencies": {},
+  "author": {
+    "name": "Damon Fedorick",
+    "url": "https://github.com/Ddemon26/Input-Manager"
+  },
+  "documentationUrl": "https://github.com/Ddemon26/Input-Manager/blob/main/README.md"
+}

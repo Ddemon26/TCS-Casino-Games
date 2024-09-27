@@ -1,0 +1,14 @@
+{
+    "name": "TCS.CasinoGames",
+    "rootNamespace": "TCS.CasinoGames",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": true,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
