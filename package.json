@@ -1,14 +1,9 @@
 {
   "name": "com.tcs.casinogames",
-  "displayName": "TCS-Casino-Games",
+  "displayName": "TCS-CasinoGames",
   "description": "A collection of casino games for Unity",
   "version": "1.0.1",
-  "keywords": [
-    "casino",
-    "games",
-    "unity",
-    "collection"
-  ],
+  "keywords": ["casino", "games", "unity", "collection"],
   "category": "Tent City Studio",
   "dependencies": {},
   "author": {
