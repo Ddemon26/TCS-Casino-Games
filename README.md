@@ -1,79 +1,82 @@
-![Unity](https://img.shields.io/badge/Unity-v2023.3%2B-blue)
-![License](https://img.shields.io/github/license/Ddemon26/Input-Manager)
-![Stars](https://img.shields.io/github/stars/Ddemon26/Input-Manager)
+# TCS Casino Games
 
-# 🎮 Enhance Your Game with the Input Manager
+![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen) ![Unity](https://img.shields.io/badge/Unity-2021.3+-black)
+![GitHub Last Commit](https://img.shields.io/github/last-commit/Ddemon26/TCS-Casino-Games) ![GitHub Issues](https://img.shields.io/github/issues/Ddemon26/TCS-Casino-Games) ![GitHub Pull Requests](https://img.shields.io/github/issues-pr/Ddemon26/TCS-Casino-Games)
 
-![Contributions welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg?style=for-the-badge)
-![Last commit](https://img.shields.io/github/last-commit/Ddemon26/Input-Manager?style=for-the-badge)
-![Contributors](https://img.shields.io/github/contributors/Ddemon26/Input-Manager?style=for-the-badge)
+## Overview
 
-![Input Reader](https://github.com/Ddemon26/InputReaderSystem/assets/95268795/3edc1704-8ffc-4229-9ce0-a23efad5bf57)
+**TCS Casino Games** is an extensive compendium of casino-style games implemented in C#. The repository encapsulates modular and scalable implementations of popular casino games, including Blackjack, Roulette, and Slots. The design aims to serve as an educational tool, a foundational platform for casino-themed game development, or as a resource for integrating casino game components into larger gaming environments. The project is architected with an emphasis on object-oriented programming paradigms, facilitating straightforward extensibility and maintainability.
 
-✨ **Input Manager** is a powerful input handling system designed for Unity developers to manage player inputs seamlessly and efficiently.
+## Games Included
 
-## 📜 Table of Contents
-- [Why Choose Input Manager?](#-why-choose-Input-Manager)
-- [Key Features](#-key-features)
-- [Getting Started](#-getting-started)
-- [Installation](#-installation)
-- [Customization](#-customization)
-- [Contributing](#-contributing)
-- [License](#-license)
+- **Blackjack**: A card game where the objective is to achieve a hand value as close to 21 as possible without exceeding it, while competing against the dealer.
+- **Roulette**: A renowned game of chance involving a spinning wheel, a ball, and the opportunity to bet on numbers or colors.
+- **Slots**: The ubiquitous slot machine game featuring a set of reels and diverse symbols, providing straightforward win conditions based on combinations.
 
-## 🌟 Why Choose Input Manager?
+## Features
 
-- 🛠️ **Seamless Integration**: As a ScriptableObject, Input Manager integrates easily into any Unity project, offering quick setup and enhanced input handling.
-- 🔧 **Customizable and Extensible**: Define your own input actions, allowing Input Manager to scale with your project’s unique requirements.
-- 🎮 **Device Agnostic**: Supports various input devices, ensuring a smooth experience whether players use a keyboard, mouse, or gamepad.
-- ⚡ **Event-Driven Architecture**: Avoid cluttered input checks in your update loops by using Input Manager's event-based system for input handling.
-- 🎯 **Responsive and Accurate**: Built for performance, capturing and processing every input precisely, offering a responsive gameplay experience.
+- **Modular Game Architecture**: Each game is constructed as an independent module, allowing ease of extension, reuse, or integration into other projects.
+- **Object-Oriented Implementation**: Key entities such as `Deck`, `Card`, `Player`, `Dealer`, and `Hand` are modeled as classes, providing a highly modular and reusable codebase.
+- **Balance Management System**: Tracks player balance dynamically, with comprehensive payout rules corresponding to each game's outcomes.
+- **Versatile Betting Mechanism**: Allows users to place variable bet amounts for each game session, offering a flexible gaming experience.
+- **Comprehensive Game Logic**: Implements intricate rules and mechanisms across multiple casino games, adhering to real-world gameplay conventions.
 
-## ✨ Key Features:
-- **Movement and Rotation**: Capture smooth player movement and rotation using intuitive events.
-- **Action Inputs**: Supports inputs for actions like jumping, running, and attacking, each with customizable events.
-- **User Interface Interaction**: Handles input for interacting with in-game UI, such as opening menus or selecting elements.
-- **Advanced Control Options**: Includes support for complex controls like scrolling, crouching, and blocking.
+## Key Files
 
-## 🚀 Getting Started
+- **BlackjackGame.cs**: Contains the core logic for the Blackjack game, including player actions, dealer actions, and bet processing.
+- **Card.cs, Deck.cs**: Fundamental representations of playing cards and decks, integral to the game mechanics of Blackjack.
+- **Roulette & Slots**: Include similarly modular implementations, encapsulating the entities and game logic necessary to simulate authentic Roulette and Slot experiences.
 
-To get started with **Input Manager**, follow these steps:
+## Getting Started
 
-1. **Install the Dependencies**: Ensure any required packages are installed.
-2. **Open the Input Manager**: Navigate to `Tools > Input Manager` in the Unity Editor.
-3. **Configure Inputs**: Customize the Input Manager based on your project's needs by defining your input actions.
-4. **Use Input Events**: Start using the input events to manage player actions.
+### Prerequisites
 
-## 🔧 Installation
--Installing the Unity Package using Git
+- **Unity 2021.3+**: The project is designed for integration with Unity, providing graphical interfaces and enhanced user interaction.
+- **.NET Framework 4.x**: Necessary for compiling and executing the C# scripts included in this project.
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/Ddemon26/TCS-Casino-Games.git
+   ```
+
+2. Open the project within Unity or load the scripts using any suitable C# development environment.
+
+3. Ensure that all required dependencies, including Unity and relevant .NET packages, are correctly installed.
+
+### Usage
+
+- To integrate one of the casino games into a Unity project, import the corresponding script files from the `Runtime` folder.
+- The provided classes are designed to facilitate straightforward integration. For instance, to run a game of Blackjack, instantiate the `BlackjackGame` class and invoke methods such as `StartRound()` to manage the flow of the game.
+
+## Gameplay Description
+
+### Blackjack
+
+In Blackjack, the player begins with a defined starting balance and can wager a specified amount at the outset of each round. Both the dealer and player are initially dealt two cards, and the goal is for the player to achieve a hand value as close to 21 as possible without exceeding it. Standard Blackjack rules apply, including hit or stand decisions for both player and dealer, based on established game logic.
+
+### Roulette
+
+Roulette involves a spinning wheel with numbered slots, each slot colored either red or black. Players can place bets on individual numbers, color groups, or numeric ranges. Once the wheel is spun, the ball settles into one of the numbered slots, and the game processes payouts accordingly, depending on the type and nature of bets placed.
+
+### Slots
+
+The slot machine game simulates a conventional 3-reel slot mechanism. Players place a wager, spin the reels, and receive payouts based on the resultant combination of symbols that align across the payline. The game encompasses classic slot machine symbols, with payouts determined by predefined win conditions.
+
+## Testing
+
+Unit tests are available under the `Tests` directory. These tests are written using a C# testing framework to validate the core game mechanics, including the shuffling of cards in Blackjack and outcome determination in Roulette. To execute the tests:
+
+```sh
+# Run using your preferred testing environment
 ```
-https://github.com/Ddemon26/Input-Manager.git
-```
--Cloning to Contribute
-  1. Clone or download this repository.
-  2. Place the folder in the `Assets` directory of your Unity project.
-  3. Open Unity and navigate to `Tools > Input Manager` to begin configuration.
 
-## ⚙️ Customization
+## Contributing
 
-- **Custom Input Actions**: Define and customize input actions within the Input Manager to match your specific game needs.
-- **Device Support**: Configure Input Manager to work across different input devices like gamepads, keyboard, and mouse.
+Contributions to the project are highly encouraged. Whether suggesting improvements, identifying bugs, or expanding game functionality, please feel free to submit a pull request or open an issue to initiate a discussion. Contributions should maintain consistency with the existing structure and coding conventions.
 
-## 🤝 Contributing
+## License
 
-Contributions are welcome! Follow the steps below to contribute:
-
-![Forks](https://img.shields.io/github/forks/Ddemon26/Input-Manager?style=social)
-![Stars](https://img.shields.io/github/stars/Ddemon26/Input-Manager?style=social)
-
-1. Fork the repository.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request.
-
-## 📄 License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
-![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+This project is distributed under the MIT License. For more detailed information, please see [LICENSE.md](LICENSE.md).
