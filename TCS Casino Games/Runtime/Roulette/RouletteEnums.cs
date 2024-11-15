@@ -3,19 +3,19 @@ namespace TCS_Casino_Games {
     public enum BetColor {
         Red,
         Black,
-        Green
+        Green,
     }
 
     // Enum for Even/Odd Bets
     public enum EvenOdd {
         Even,
-        Odd
+        Odd,
     }
 
     // Enum for High/Low Bets
     public enum HighLow {
         High,
-        Low
+        Low,
     }
     
     // Enum for Roulette Bet Types
@@ -23,6 +23,6 @@ namespace TCS_Casino_Games {
         Straight,
         RedBlack,
         EvenOdd,
-        HighLow
+        HighLow,
     }
 }

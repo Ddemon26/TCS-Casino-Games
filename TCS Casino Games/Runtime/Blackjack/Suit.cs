@@ -3,6 +3,6 @@
         Hearts,
         Diamonds,
         Clubs,
-        Spades
+        Spades,
     }
 }

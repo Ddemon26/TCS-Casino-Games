@@ -2,15 +2,9 @@ using System.Collections.Generic;
 
 namespace TCS_Blackjack {
     public class Hand {
-        public List<Card> Cards { get; private set; }
+        public List<Card> Cards { get; } = new();
         public int Total { get; private set; }
         int m_aces;
-
-        public Hand() {
-            Cards = new List<Card>();
-            Total = 0;
-            m_aces = 0;
-        }
 
         public void AddCard(Card card) {
             Cards.Add(card);

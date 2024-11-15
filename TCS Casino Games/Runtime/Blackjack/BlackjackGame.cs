@@ -5,9 +5,9 @@ namespace TCS_Blackjack {
         const float BLACKJACK_PAYOUT = 1.5f;
         const float REGULAR_WIN_PAYOUT = 1.0f;
 
-        Deck m_deck;
-        Player m_player;
-        Dealer m_dealer;
+        readonly Deck m_deck;
+        readonly Player m_player;
+        readonly Dealer m_dealer;
 
         public BlackjackGame(float startingBalance) {
             m_deck = new Deck();
@@ -87,12 +87,12 @@ namespace TCS_Blackjack {
                     Console.WriteLine("Player Busts!");
                     return;
                 }
-                else if (action == "stand") {
+
+                if (action == "stand") {
                     break;
                 }
-                else {
-                    Console.WriteLine("Invalid choice.");
-                }
+
+                Console.WriteLine("Invalid choice.");
             }
         }
 
