@@ -5,6 +5,6 @@ namespace TCS.CasinoGames {
         Cherry,
         Bell,
         Diamond,
-        Star
+        Star,
     }
 }

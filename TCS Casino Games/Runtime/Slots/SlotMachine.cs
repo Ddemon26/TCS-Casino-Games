@@ -14,7 +14,7 @@ namespace TCS.CasinoGames {
             List<SlotSymbol> result = new() {
                 m_reels[0].Spin(),
                 m_reels[1].Spin(),
-                m_reels[2].Spin()
+                m_reels[2].Spin(),
             };
 
             int winnings = m_evaluator.Evaluate(result, bet);

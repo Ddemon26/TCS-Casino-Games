@@ -12,7 +12,7 @@ namespace TCS.CasinoGames.Tests {
                 { SlotSymbol.Cherry, 3f },
                 { SlotSymbol.Bell, 3f },
                 { SlotSymbol.Diamond, 3f },
-                { SlotSymbol.Star, 1.65f }
+                { SlotSymbol.Star, 1.65f },
             };
 
             List<int> symbolWeights = new() { 1, 6, 8, 6, 6, 3 };
